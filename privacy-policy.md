@@ -57,6 +57,6 @@ We may update our Privacy Policy periodically to reflect changes in our practice
 
 If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
 
-*   **Email:** [Insert Developer/Support Email Address]
-*   **Developer Name/Company:** [Insert Name]
-*   **Website:** [Insert Website if applicable]
+*   **Email:** saidheerajpeketi@gmail.com
+*   **Developer Name/Company:** BlackandBlue
+*   **Website:** NA
