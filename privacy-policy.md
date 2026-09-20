@@ -1,62 +1,84 @@
 # Privacy Policy for FlowSpace
 
-**Effective Date:** August 21, 2026
+**Effective date:** September 20, 2026  
+**Developer:** Black and Blue
 
-**FlowSpace** ("we," "us," or "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains our practices regarding the collection, use, and disclosure of information when you use the FlowSpace Android application (the "App"). 
+FlowSpace is an Android launcher, focus timer, app-limit, and device-automation app published by Black and Blue ("FlowSpace," "we," "us," or "our"). This policy explains what the app accesses, what may leave your device, and the choices available to you.
 
-This Privacy Policy has been created to comply with industry standards and the Google Play Store Developer Policies. By using FlowSpace, you agree to the collection and use of information in accordance with this policy.
+FlowSpace does not require an account. We do not sell personal data or show advertising. The audited version does not include Firebase Analytics, Firebase Crashlytics, or another general-purpose product analytics or crash-reporting SDK.
 
----
+## 1. Information processed on your device
 
-## 1. Information We Collect and How We Use It
+FlowSpace processes the following information locally to provide features you choose:
 
-FlowSpace is designed with a **privacy-first, local-storage approach**. We do not require you to create an account, and we do not transmit your personal usage data to external servers. However, to provide the core functionality of a productivity launcher and app blocker, the App requires access to certain sensitive permissions on your device.
+- **Installed apps:** package names, app labels, icons, and launch information are used for the launcher, Spaces, app limits, and user-selected app lists.
+- **App activity:** Usage Access may provide foreground-app and screen-time events for focus protection, App Timers, and Insights. If you separately enable the FlowSpace Accessibility Service, the app observes window-change events and the package name of an opened app for user-created App opened or Game playing Routines and optional break reminders. The service may perform Android's lock-screen action after you invoke Double tap to lock. It is configured not to retrieve window content; FlowSpace does not read typed text or screen content.
+- **Notifications:** if you enable Notification Access, Android delivers notification events to FlowSpace. FlowSpace uses the sending app's package name for user-created notification Routines and may snooze notifications from blocked apps during a focus session. It does not read or store notification text.
+- **Location:** if you create a Place Routine, FlowSpace stores the place label, selected latitude and longitude, and radius locally, then uses Android geofencing to detect entry or exit. It does not create or store a continuous location history.
+- **Device state:** a Routine you create may evaluate Wi-Fi, Bluetooth, charging, battery, headset, sound mode, physical activity, car mode, NFC, or call state. Call-state access detects only ringing or active-call state; FlowSpace does not read phone numbers or call logs.
+- **Focus and preference data:** Spaces, Routines, session history, app limits, goals, settings, and locally generated Insights are stored in the app's private database or preferences.
+- **Wallpaper content:** if you use wallpaper switching, FlowSpace may keep a private on-device copy of the current or chosen wallpaper so it can apply or restore it.
 
-### A. Data Processed Locally on Your Device
+This locally processed information is not sent to a Black and Blue server.
 
-The following data is accessed and processed strictly **locally on your device**. It is **never** transmitted to our servers, sold, or shared with third parties:
+## 2. Information sent to service providers
 
-*   **Installed Applications (`QUERY_ALL_PACKAGES`):** FlowSpace requires access to your list of installed applications to allow you to configure "Spaces," select allowed apps, and block distracting apps.
-*   **App Usage Data (`PACKAGE_USAGE_STATS`):** We require Usage Access to monitor which apps are currently in the foreground. This allows us to enforce blocking rules during Focus Sessions or Zen Mode and to provide you with local insights into your screen time and focus habits.
-*   **Location Data:** If you enable location-based Automation Routines (Geofencing), the App will request background and foreground location permissions. This data is used exclusively on your device to trigger routines (e.g., activating a specific Space when you arrive at work). **We do not track, store, or transmit your location history.**
-*   **System State & Interruption Filters:** To manage Do-Not-Disturb (DND) modes and Automation Routines, we evaluate device states such as Wi-Fi connectivity, charging status, Bluetooth, and incoming calls. This ensures sessions function correctly and automatically.
-*   **Screen Overlays (`SYSTEM_ALERT_WINDOW`):** We use screen overlays to provide soft or hard blocking mechanisms (Zen Mode) over distracting applications.
+Some optional or operational features use third-party services.
 
-### B. Information Collected by Third-Party Services
+### Google Play Billing and RevenueCat
 
-While FlowSpace processes your core data locally, we utilize secure, industry-standard third-party services for specific operational features:
+FlowSpace uses Google Play Billing and RevenueCat to offer and manage FlowSpace Pro. These services may process purchase history, purchase tokens, subscription status, an anonymous RevenueCat app-user identifier, app and device or operating-system information, and network information such as an IP address. FlowSpace does not provide them with your name, email address, contacts, or locally stored focus activity.
 
-*   **Google Play Billing:** For users who opt for Pro trials or premium subscriptions, payment processing is managed entirely by Google Play Billing. We do not collect, process, or store your credit card information or billing address. All transactions are subject to the [Google Play Terms of Service](https://play.google.com/about/play-terms/) and [Google Privacy Policy](https://policies.google.com/privacy).
+This information is used to display, verify, restore, secure, support, and measure purchases and subscriptions. Payment-card and billing-address handling is performed by Google Play, not FlowSpace. Data is handled under the [Google Privacy Policy](https://policies.google.com/privacy), [Google Play Terms](https://play.google.com/about/play-terms/), and [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/).
 
-## 2. Data Storage, Security, and Retention
+### Place Routines, map tiles, and geocoding
 
-*   **Local Storage:** All user-generated content, including custom Spaces, Routines, historical usage insights, and preferences, is stored locally in your device’s secure storage (via Android DataStore/Room). 
-*   **Data Security:** We rely on the Android operating system's application sandbox and security architecture to protect your data from unauthorized access by other applications.
-*   **Data Retention:** Because your data is stored locally, it is retained for as long as you keep the App installed.
+When you use a Place Routine, Google Play services may process precise location to register and deliver geofence events under Google's privacy terms.
 
-## 3. Your Rights and Data Deletion
+When you open the place picker, OpenFreeMap infrastructure receives ordinary network request data, including your IP address and the map area being viewed, to render an OpenStreetMap-based map. When you search for a place or move the map to label its center, the OpenStreetMap Foundation's Nominatim service receives the search text or coordinates, your IP address, preferred language, and an app-identifying user agent. See [OpenFreeMap](https://openfreemap.org/), the [OpenStreetMap Foundation privacy policy](https://osmfoundation.org/wiki/Privacy_Policy), and the [Nominatim usage policy](https://operations.osmfoundation.org/policies/nominatim/).
 
-You have complete control over your data:
+### Downloadable font
 
-*   **Revoking Permissions:** You can revoke any granted permissions (such as Usage Access, Location, or Notifications) at any time via your device's native Settings app. Please note that revoking core permissions will limit or disable FlowSpace's ability to function as intended.
-*   **Deleting Your Data:** You can permanently delete all data collected and stored by FlowSpace by either:
-    1. Clearing the App's data and cache in your device's Settings (`Settings > Apps > FlowSpace > Storage > Clear Data`).
-    2. Uninstalling the FlowSpace application from your device.
+FlowSpace requests the Manrope font through Google Play services. Google may receive ordinary request and device information needed to deliver the font under the [Google Privacy Policy](https://policies.google.com/privacy).
 
-*(Note: We currently do not offer cloud sync or cross-device backup features. Therefore, deleting the app will result in the permanent loss of your local configurations.)*
+### Support email
 
-## 4. Children's Privacy
+If you choose to contact support, your email provider and ours process the message and any information you include. FlowSpace pre-fills app version, Android version, API level, device manufacturer, and device model to help diagnose the problem; you can edit the message before sending it. Do not include passwords, receipts, precise location, or other sensitive information unless specifically requested through a secure channel.
 
-FlowSpace is not directed to individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to ensure that data is deleted. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us.
+## 3. Permissions and your choices
 
-## 5. Changes to This Privacy Policy
+FlowSpace asks for access only when it is needed for a feature or when you choose to enable it. Depending on the feature, this may include Usage Access, Display Over Other Apps, Notification Access, Accessibility, foreground and background location, installed-app visibility, phone state, nearby devices, physical activity, Do Not Disturb, system-setting access, exact alarms, NFC, wallpaper, foreground services, or notifications.
 
-We may update our Privacy Policy periodically to reflect changes in our practices, technology, or legal requirements. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. We encourage you to review this Privacy Policy periodically.
+You can revoke access in Android Settings. Revoking access disables the features that depend on it. Accessibility and broad installed-app visibility support FlowSpace's launcher, app selection, focus protection, App Timers, and user-created Routines; they are not used for advertising, profiling, or remote monitoring.
 
-## 6. Contact Us
+## 4. Retention, security, and deletion
 
-If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
+Local data is protected by Android's application sandbox. FlowSpace disables Android cloud backup and device-to-device transfer for its private app data. Local data remains until you clear FlowSpace storage or uninstall the app. Either action deletes the app's local database, preferences, saved wallpaper copies, and other private files.
 
-*   **Email:** saidheerajpeketi@gmail.com
-*   **Developer Name/Company:** BlackandBlue
-*   **Website:** NA
+Google Play, RevenueCat, Google Play services, OpenFreeMap, Nominatim, and email providers keep information according to their own legal, fraud-prevention, security, and operational requirements.
+
+To request help identifying or deleting information associated with FlowSpace's anonymous RevenueCat identifier, email **developer@blackandblue.co.in** with the subject **FlowSpace privacy request**. We may need information from the app or a purchase record to locate the relevant identifier. Some purchase records may need to be retained by Google, RevenueCat, or Black and Blue where required by law, accounting, fraud prevention, or dispute handling.
+
+## 5. Children's privacy
+
+FlowSpace is intended for people aged 13 and older and is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through a service used by FlowSpace, contact us so we can investigate and take appropriate action.
+
+Google Play currently lists ages 13–15 among FlowSpace's target audience. This policy statement does not by itself establish compliance with every child-privacy or Google Play Families requirement in every country. Black and Blue must complete the applicable legal and Play review before publishing to minors.
+
+## 6. International processing and users in India
+
+Third-party providers may process information in countries other than the country where you live. Their privacy policies describe their processing locations and safeguards.
+
+Users in India may contact the Grievance Officer at **developer@blackandblue.co.in** with the subject **FlowSpace grievance**. Black and Blue will respond according to applicable Indian law. The publisher must add the Grievance Officer's legal name, postal address, and any other legally required particulars before relying on this paragraph for statutory compliance.
+
+## 7. Changes to this policy
+
+We may update this policy when the app, its service providers, or legal requirements change. The current version will show its effective date above. Material changes will be communicated through the app or store listing when appropriate.
+
+## 8. Contact
+
+- **Developer:** Black and Blue
+- **Email:** developer@blackandblue.co.in
+- **Privacy page:** https://flowspace.blackandblue.co.in/
+
+For privacy or deletion requests, email us. Do not post purchase identifiers, location, or other sensitive information in a public issue.
