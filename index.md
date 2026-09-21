@@ -1,11 +1,11 @@
 # Privacy Policy for FlowSpace
 
-**Effective date:** September 20, 2026  
+**Effective date:** September 21, 2026  
 **Developer:** Black and Blue
 
 FlowSpace is an Android launcher, focus timer, app-limit, and device-automation app published by Black and Blue ("FlowSpace," "we," "us," or "our"). This policy explains what the app accesses, what may leave your device, and the choices available to you.
 
-FlowSpace does not require an account. We do not sell personal data or show advertising. The audited version does not include Firebase Analytics, Firebase Crashlytics, or another general-purpose product analytics or crash-reporting SDK.
+FlowSpace does not require an account. We do not sell personal data or show advertising. The app uses Firebase Analytics and Firebase Crashlytics for limited product analytics, reliability monitoring, and crash diagnosis as described below. Advertising ID collection and ad-personalization signals are disabled.
 
 ## 1. Information processed on your device
 
@@ -31,6 +31,14 @@ FlowSpace uses Google Play Billing and RevenueCat to offer and manage FlowSpace 
 
 This information is used to display, verify, restore, secure, support, and measure purchases and subscriptions. Payment-card and billing-address handling is performed by Google Play, not FlowSpace. Data is handled under the [Google Privacy Policy](https://policies.google.com/privacy), [Google Play Terms](https://play.google.com/about/play-terms/), and [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/).
 
+### Firebase Analytics and Crashlytics
+
+FlowSpace uses Google Firebase Analytics to understand whether major product flows work and Firebase Crashlytics to diagnose crashes and non-fatal errors. Analytics may automatically process an app-instance identifier, a masked IP address used to derive approximate location, app lifecycle and screen-view events, and Google Play purchase or subscription events. FlowSpace also sends a small event taxonomy covering feature use, onboarding-step completion, paywall views, trial starts, completed purchases, and encountered errors. Custom event values are limited to predefined technical labels; FlowSpace does not send typed text, place searches, precise location, installed-app lists, notification content, focus history, Space or Routine contents, names, email addresses, or account identifiers through these custom events.
+
+Crashlytics may process crash and non-fatal stack traces, relevant app state, app version, device model and operating-system metadata, Crashlytics installation UUIDs, and Firebase installation IDs. FlowSpace does not set a Crashlytics user ID. Firebase installation and app-instance IDs identify an app installation and are not a FlowSpace account.
+
+Google processes this information to provide analytics, crash reporting, and service security. Data is encrypted in transit. FlowSpace does not link Firebase Analytics to an advertising account, does not use Firebase data for advertising, and disables collection of the Android Advertising ID and ad-personalization signals. See [Privacy and Security in Firebase](https://firebase.google.com/support/privacy) and Google's [Analytics data-disclosure guidance](https://support.google.com/analytics/answer/11582702).
+
 ### Place Routines, map tiles, and geocoding
 
 When you use a Place Routine, Google Play services may process precise location to register and deliver geofence events under Google's privacy terms.
@@ -55,9 +63,9 @@ You can revoke access in Android Settings. Revoking access disables the features
 
 Local data is protected by Android's application sandbox. FlowSpace disables Android cloud backup and device-to-device transfer for its private app data. Local data remains until you clear FlowSpace storage or uninstall the app. Either action deletes the app's local database, preferences, saved wallpaper copies, and other private files.
 
-Google Play, RevenueCat, Google Play services, OpenFreeMap, Nominatim, and email providers keep information according to their own legal, fraud-prevention, security, and operational requirements.
+Google Play, RevenueCat, Firebase, Google Play services, OpenFreeMap, Nominatim, and email providers keep information according to their own legal, fraud-prevention, security, and operational requirements. Firebase states that Crashlytics keeps crash traces and associated installation identifiers for 90 days before beginning removal from live and backup systems. Analytics retention is governed by the FlowSpace Analytics property settings and Google's applicable terms.
 
-To request help identifying or deleting information associated with FlowSpace's anonymous RevenueCat identifier, email **developer@blackandblue.co.in** with the subject **FlowSpace privacy request**. We may need information from the app or a purchase record to locate the relevant identifier. Some purchase records may need to be retained by Google, RevenueCat, or Black and Blue where required by law, accounting, fraud prevention, or dispute handling.
+To request help identifying or deleting information associated with FlowSpace's anonymous RevenueCat or Firebase installation identifier, email **developer@blackandblue.co.in** with the subject **FlowSpace privacy request**. We may need information from the app or a purchase record to locate the relevant identifier. Some purchase or operational records may need to be retained by Google, RevenueCat, Firebase, or Black and Blue where required by law, accounting, fraud prevention, security, or dispute handling.
 
 ## 5. Children's privacy
 
