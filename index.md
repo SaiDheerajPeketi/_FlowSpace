@@ -25,11 +25,11 @@ This locally processed information is not sent to a Black and Blue server.
 
 Some optional or operational features use third-party services.
 
-### Google Play Billing and RevenueCat
+### Purchases and optional tips: Google Play Billing and RevenueCat
 
-FlowSpace uses Google Play Billing and RevenueCat to offer and manage FlowSpace Pro. These services may process purchase history, purchase tokens, subscription status, an anonymous RevenueCat app-user identifier, app and device or operating-system information, and network information such as an IP address. FlowSpace does not provide them with your name, email address, contacts, or locally stored focus activity.
+FlowSpace uses Google Play Billing and RevenueCat to offer and manage FlowSpace Pro and an optional repeatable one-time tip. These services may process purchase history, purchase tokens, subscription status, an anonymous RevenueCat app-user identifier, app and device or operating-system information, and network information such as an IP address. FlowSpace does not provide them with your name, email address, contacts, or locally stored focus activity.
 
-This information is used to display, verify, restore, secure, support, and measure purchases and subscriptions. Payment-card and billing-address handling is performed by Google Play, not FlowSpace. Data is handled under the [Google Privacy Policy](https://policies.google.com/privacy), [Google Play Terms](https://play.google.com/about/play-terms/), and [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/).
+This information is used to display, verify, restore, secure, support, and measure purchases, subscriptions, and optional tips. Tips do not unlock content or change app access. Payment-card and billing-address handling is performed by Google Play, not FlowSpace. Data is handled under the [Google Privacy Policy](https://policies.google.com/privacy), [Google Play Terms](https://play.google.com/about/play-terms/), and [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/).
 
 ### Firebase Analytics and Crashlytics
 
@@ -77,7 +77,7 @@ Google Play currently lists ages 13–15 among FlowSpace's target audience. This
 
 Third-party providers may process information in countries other than the country where you live. Their privacy policies describe their processing locations and safeguards.
 
-Users in India may contact the Grievance Officer at **developer@blackandblue.co.in** with the subject **FlowSpace grievance**. Black and Blue will respond according to applicable Indian law. The publisher must add the Grievance Officer's legal name, postal address, and any other legally required particulars before relying on this paragraph for statutory compliance.
+Users in India may send privacy questions or complaints to Black and Blue at **developer@blackandblue.co.in** with the subject **FlowSpace privacy request**. We will respond in accordance with applicable law. This contact statement does not designate a statutory grievance officer or publish unverified legal or postal details.
 
 ## 7. Changes to this policy
 
