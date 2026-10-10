@@ -1,11 +1,11 @@
 # Privacy Policy for FlowSpace
 
-**Effective date:** September 21, 2026  
+**Effective date:** October 10, 2026
 **Developer:** Black and Blue
 
 FlowSpace is an Android launcher, focus timer, app-limit, and device-automation app published by Black and Blue ("FlowSpace," "we," "us," or "our"). This policy explains what the app accesses, what may leave your device, and the choices available to you.
 
-FlowSpace does not require an account. We do not sell personal data or show advertising. The app uses Firebase Analytics and Firebase Crashlytics for limited product analytics, reliability monitoring, and crash diagnosis as described below. Advertising ID collection and ad-personalization signals are disabled.
+FlowSpace does not require an account. We do not sell personal data or show advertising. From version 0.0.33, Firebase Analytics provides optional usage reporting for adults who opt in, and the app does not include a Crashlytics crash uploader. Earlier versions used Firebase Analytics and Crashlytics as described below. Advertising ID collection and ad-personalization signals are disabled.
 
 ## 1. Information processed on your device
 
@@ -29,15 +29,17 @@ Some optional or operational features use third-party services.
 
 FlowSpace uses Google Play Billing and RevenueCat to offer and manage FlowSpace Pro and an optional repeatable one-time tip. These services may process purchase history, purchase tokens, subscription status, an anonymous RevenueCat app-user identifier, app and device or operating-system information, and network information such as an IP address. FlowSpace does not provide them with your name, email address, contacts, or locally stored focus activity.
 
+RevenueCat initializes when FlowSpace starts so it can refresh access and available products. Its anonymous installation identifier and ordinary request metadata may therefore be processed even if you do not purchase, independently of the optional Firebase reporting setting. From version 0.0.33, FlowSpace explicitly disables RevenueCat's automatic device-identifier collection and does not supply attribution identifiers.
+
 This information is used to display, verify, restore, secure, support, and measure purchases, subscriptions, and optional tips. Tips do not unlock content or change app access. Payment-card and billing-address handling is performed by Google Play, not FlowSpace. Data is handled under the [Google Privacy Policy](https://policies.google.com/privacy), [Google Play Terms](https://play.google.com/about/play-terms/), and [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/).
 
 ### Firebase Analytics and Crashlytics
 
-From version 0.0.33, usage and crash reporting are off by default, including after upgrading from earlier versions. Reporting is offered only after an on-device birth-date check indicates that you are 18 or older, followed by a separate affirmative sharing choice. The birth date is used transiently and is not saved, logged, or sent to providers. A declined, invalid, or under-18 answer leaves reporting off. You can make this choice under Settings → Privacy & Permissions → Usage and crash reports; it does not limit app features. Turning the setting off stops app-controlled events and disables Analytics collection; restart FlowSpace to finish turning off automatic Crashlytics reporting. Reports already sent to the providers are not deleted by turning this setting off. Opting in can also upload crash reports stored locally by earlier versions; the confirmation explains this before reporting is enabled.
+From version 0.0.33, usage reporting is off by default, including after upgrading from earlier versions. Reporting is offered only after an on-device birth-date check indicates that you are 18 or older, followed by a separate affirmative sharing choice. The birth date is used transiently and is not saved, logged, or sent to providers. A declined, invalid, or under-18 answer leaves reporting off. You can make this choice under Settings → Privacy & Permissions → Usage reports; it does not limit app features. Turning the setting off stops app-controlled events and disables Analytics collection. This version does not include the Crashlytics SDK and cannot resume uploading its older on-device crash reports. This does not delete reports already held by Google or promise removal of older local files.
 
-FlowSpace uses Google Firebase Analytics to understand whether major product flows work and Firebase Crashlytics to diagnose crashes and non-fatal errors. Analytics may automatically process an app-instance identifier, a masked IP address used to derive approximate location, app lifecycle and screen-view events, and Google Play purchase or subscription events. FlowSpace also sends a small event taxonomy covering feature use, onboarding-step completion, paywall views, trial starts, completed purchases, and encountered errors. Custom event values are limited to predefined technical labels; FlowSpace does not send typed text, place searches, precise location, installed-app lists, notification content, focus history, Space or Routine contents, names, email addresses, or account identifiers through these custom events.
+FlowSpace uses Google Firebase Analytics to understand whether major product flows work. Analytics may automatically process an app-instance identifier, a masked IP address used to derive approximate location, app lifecycle and screen-view events, and Google Play purchase or subscription events. FlowSpace also sends a small event taxonomy covering feature use, onboarding-step completion, paywall views, trial starts, completed purchases, and encountered errors. Custom event values are limited to predefined technical labels; FlowSpace does not send typed text, place searches, precise location, installed-app lists, notification content, focus history, Space or Routine contents, names, email addresses, or account identifiers through these custom events.
 
-Crashlytics may process crash and non-fatal stack traces, relevant app state, app version, device model and operating-system metadata, Crashlytics installation UUIDs, and Firebase installation IDs. FlowSpace does not set a Crashlytics user ID. Firebase installation and app-instance IDs identify an app installation and are not a FlowSpace account.
+Versions before 0.0.33 used Crashlytics to process crash and non-fatal stack traces, relevant app state, app version, device model and operating-system metadata, Crashlytics installation UUIDs, and Firebase installation IDs. FlowSpace did not set a Crashlytics user ID. Firebase installation and app-instance IDs identify an app installation and are not a FlowSpace account. Earlier installed versions continue to follow their earlier reporting behavior until updated.
 
 Google processes this information to provide analytics, crash reporting, and service security. Data is encrypted in transit. FlowSpace does not link Firebase Analytics to an advertising account, does not use Firebase data for advertising, and disables collection of the Android Advertising ID and ad-personalization signals. See [Privacy and Security in Firebase](https://firebase.google.com/support/privacy) and Google's [Analytics data-disclosure guidance](https://support.google.com/analytics/answer/11582702).
 
@@ -73,9 +75,9 @@ To request help identifying or deleting information associated with FlowSpace's 
 
 FlowSpace is intended for people aged 13 and older and is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through a service used by FlowSpace, contact us so we can investigate and take appropriate action.
 
-From version 0.0.33, optional Firebase usage and crash reporting is unavailable to users who declare that they are under 18 or do not provide a valid birth date. This is a local eligibility check, not verified parental consent or proof of identity. It does not change subscriptions, device permissions, or the separate provider processing described above.
+From version 0.0.33, optional Firebase usage reporting is unavailable to users who declare that they are under 18 or do not provide a valid birth date. This is a local eligibility check, not verified parental consent or proof of identity. It does not change subscriptions, device permissions, or the separate provider processing described above. The Crashlytics uploader is absent for all users of that version.
 
-Google Play currently lists ages 13–15 among FlowSpace's target audience. This policy statement does not by itself establish compliance with every child-privacy or Google Play Families requirement in every country. Black and Blue must complete the applicable legal and Play review before publishing to minors.
+FlowSpace's Google Play audience includes ages 13–15, 16–17 and 18+. Subscriptions and optional tips remain subject to Google Play's payment and purchase-approval controls.
 
 ## 6. International processing and users in India
 
