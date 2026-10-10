@@ -43,7 +43,7 @@ Google processes this information to provide analytics, crash reporting, and ser
 
 When you use a Place Routine, Google Play services may process precise location to register and deliver geofence events under Google's privacy terms.
 
-When you open the place picker, OpenFreeMap infrastructure receives ordinary network request data, including your IP address and the map area being viewed, to render an OpenStreetMap-based map. When you search for a place or move the map to label its center, the OpenStreetMap Foundation's Nominatim service receives the search text or coordinates, your IP address, preferred language, and an app-identifying user agent. See [OpenFreeMap](https://openfreemap.org/), the [OpenStreetMap Foundation privacy policy](https://osmfoundation.org/wiki/Privacy_Policy), and the [Nominatim usage policy](https://operations.osmfoundation.org/policies/nominatim/).
+When you open the place picker, OpenFreeMap infrastructure receives ordinary network request data, including your IP address and the map area being viewed, to render an OpenStreetMap-based map. When you search for a place or move the map to label its center, Android's device geocoding provider receives the search text or selected coordinates and preferred language. The provider may use network services and process ordinary request data and app/device information. Provider availability and results vary by device; you can still select a point on the map when a lookup is unavailable. See [OpenFreeMap](https://openfreemap.org/) and [Android Geocoder](https://developer.android.com/reference/android/location/Geocoder).
 
 ### Downloadable font
 
@@ -63,7 +63,7 @@ You can revoke access in Android Settings. Revoking access disables the features
 
 Local data is protected by Android's application sandbox. FlowSpace disables Android cloud backup and device-to-device transfer for its private app data. Local data remains until you clear FlowSpace storage or uninstall the app. Either action deletes the app's local database, preferences, saved wallpaper copies, and other private files.
 
-Google Play, RevenueCat, Firebase, Google Play services, OpenFreeMap, Nominatim, and email providers keep information according to their own legal, fraud-prevention, security, and operational requirements. Firebase states that Crashlytics keeps crash traces and associated installation identifiers for 90 days before beginning removal from live and backup systems. Analytics retention is governed by the FlowSpace Analytics property settings and Google's applicable terms.
+Google Play, RevenueCat, Firebase, Google Play services, OpenFreeMap, Android device geocoding providers, and email providers keep information according to their own legal, fraud-prevention, security, and operational requirements. Firebase states that Crashlytics keeps crash traces and associated installation identifiers for 90 days before beginning removal from live and backup systems. Analytics retention is governed by the FlowSpace Analytics property settings and Google's applicable terms.
 
 To request help identifying or deleting information associated with FlowSpace's anonymous RevenueCat or Firebase installation identifier, email **developer@blackandblue.co.in** with the subject **FlowSpace privacy request**. We may need information from the app or a purchase record to locate the relevant identifier. Some purchase or operational records may need to be retained by Google, RevenueCat, Firebase, or Black and Blue where required by law, accounting, fraud prevention, security, or dispute handling.
 
