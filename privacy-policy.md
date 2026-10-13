@@ -1,6 +1,6 @@
 # Privacy Policy for FlowSpace
 
-**Effective date:** October 10, 2026
+**Effective date:** October 13, 2026
 **Developer:** Black and Blue
 
 FlowSpace is an Android launcher, focus timer, app-limit, and device-automation app published by Black and Blue ("FlowSpace," "we," "us," or "our"). This policy explains what the app accesses, what may leave your device, and the choices available to you.
@@ -12,7 +12,7 @@ FlowSpace does not require an account. We do not sell personal data or show adve
 FlowSpace processes the following information locally to provide features you choose:
 
 - **Installed apps:** package names, app labels, icons, and launch information are used for the launcher, Spaces, app limits, and user-selected app lists.
-- **App activity:** Usage Access may provide foreground-app and screen-time events for focus protection, App Timers, and Insights. If you separately enable the FlowSpace Accessibility Service, the app observes window-change events and the package name of an opened app for user-created App opened or Game playing Routines and optional break reminders. The service may perform Android's lock-screen action after you invoke Double tap to lock. It is configured not to retrieve window content; FlowSpace does not read typed text or screen content.
+- **App activity:** Usage Access may provide foreground-app and screen-time events for focus protection, App Timers, and Insights. Starting with version 1.0.1, FlowSpace saves your choice from its optional in-app accessibility disclosure before processing accessibility events. If you agree and enable the service in Android Settings, it receives window-change events and foreground app package names for App opened and Game playing Routines and estimates recent activity for optional 45-minute break reminders. It also detects light/dark theme changes for Routines and performs Android's lock-screen action when you use Double tap to lock. Accessibility activity is processed only on your device and is not sent, sold, or shared. The service cannot retrieve window content or read screen content or typed text.
 - **Notifications:** if you enable Notification Access, Android delivers notification events to FlowSpace. FlowSpace uses the sending app's package name for user-created notification Routines and may snooze notifications from blocked apps during a focus session. It does not read or store notification text.
 - **Location:** if you create a Place Routine, FlowSpace stores the place label, selected latitude and longitude, and radius locally, then uses Android geofencing to detect entry or exit. It does not create or store a continuous location history.
 - **Device state:** a Routine you create may evaluate Wi-Fi, Bluetooth, charging, battery, headset, sound mode, physical activity, car mode, NFC, or call state. Call-state access detects only ringing or active-call state; FlowSpace does not read phone numbers or call logs.
@@ -61,7 +61,7 @@ If you choose to contact support, your email provider and ours process the messa
 
 FlowSpace asks for access only when it is needed for a feature or when you choose to enable it. Depending on the feature, this may include Usage Access, Display Over Other Apps, Notification Access, Accessibility, foreground and background location, installed-app visibility, phone state, nearby devices, physical activity, Do Not Disturb, system-setting access, exact alarms, NFC, wallpaper, foreground services, or notifications.
 
-You can revoke access in Android Settings. Revoking access disables the features that depend on it. Accessibility and broad installed-app visibility support FlowSpace's launcher, app selection, focus protection, App Timers, and user-created Routines; they are not used for advertising, profiling, or remote monitoring.
+You can revoke access in Android Settings. Revoking access disables the features that depend on it. Broad installed-app visibility supports the launcher, app selection, Spaces, and App Timers. Accessibility is optional and supports app-based and theme Routines, activity-based break reminders, and Double tap to lock; declining its disclosure keeps the launcher and timers available. Neither permission is used for advertising, profiling, or remote monitoring.
 
 ## 4. Retention, security, and deletion
 
